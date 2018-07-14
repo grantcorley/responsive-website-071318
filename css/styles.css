@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Slabo+27px');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3{
+    font-family: 'Slabo 27px', serif;
+
+}
