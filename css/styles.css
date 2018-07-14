@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Slabo+27px');
-@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css?family=Cabin|Slabo+27px');
 
 
 body{
@@ -21,15 +20,14 @@ h1{
 
 h2{
     font-size:2.4em;
-    /* border:1px dotted salmon; */
     margin: .25em 0 0 0;
     letter-spacing: .05em;
 }
 
 p{
-    /* border:1px dotted green; */
     line-height: 1.5em;
 }
+
 
 /*make images flexible*/
 img{
@@ -39,20 +37,20 @@ img{
 }
 
 
+
+
 header{
     display:flex;
     flex-direction: column;
     /* border:1px solid rgb(0, 247, 255); */
     align-items: center;
+    margin: 0 auto;
 }
 
 
 main{
-    /* display:flex;
-    flex-direction: column; */
-    /* border:2px solid orangered; */
     max-width:994px;
-    margin: 0 auto;
+    margin: 0 auto 3em auto;
 }
 
 #articles{
@@ -63,7 +61,6 @@ main{
 article{
     display:flex;
     flex-direction: column;
-    /* border:1px dotted aqua; */
     align-items: center;
     padding: 1em 0 3em 0;
 }
@@ -71,7 +68,6 @@ article{
 #hero{
     border-radius:.5em;
     background-image: url("../images/pattern.png");
-    /* border:1px solid red; */
     width:100%;
     height:24vh;
     display:flex;
@@ -85,7 +81,6 @@ nav ul{
     display:flex;
     flex-direction: row;
     list-style-type: none;
-    /* border:1px dotted red; */
     margin-top:1em !important;
     margin-bottom:2em !important;
 
@@ -98,10 +93,8 @@ nav ul{
 
 }
 
-nav ul {
-   
-}
 
+/*  NAV styles  */
 
 nav li{
     background-color: orange;
@@ -117,7 +110,6 @@ nav li:link, nav li:visited{
 
 nav li:hover, nav li:active{
     background-color: #2db2c4;
-    color:white;
 }
 
 nav li a:hover, nav li a:active{
@@ -129,13 +121,6 @@ nav li + li{   /*select everything AFTER the first li*/
     margin-left: .5em;
 }
 
-/* nav li:nth-child(2){
-    background-color:orangered;
-} */
-
-/* nav li:nth-child(2) a{
-    color:white;
-} */
 
 nav a{
     text-decoration: none;
@@ -146,16 +131,26 @@ nav a{
 
 
 
-
-
-
-/*MEDIA QUERIES*/
+/* -------------- MEDIA QUERIES ------------- */
 
 @media (min-width: 1024px) { 
 
     #articles{
         flex-direction: row;
-        margin-top:1em;
+        margin-top:2em;
+        
+    }
+
+    article{
+        padding:0 1.25em;
+    }
+
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        max-width:994px;
+        margin: 0 auto;
+        margin-bottom:1.76em;
     }
 
  }
