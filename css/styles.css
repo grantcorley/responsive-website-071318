@@ -2,15 +2,49 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    font-size:1em;
 }
 
 h1, h2, h3{
     font-family: 'Slabo 27px', serif;
+}
 
+h2{
+    font-size:2.4em;
+    border:1px dotted salmon;
+}
+
+p{
+    border:1px dotted green;
 }
 
 /*make images flexible*/
 img{
     max-width:100%;
     height:auto;
+    align-self:center; /*very interesting...*/
+}
+
+
+header{
+    display:flex;
+    flex-direction: column;
+    border:1px solid rgb(0, 247, 255);
+    align-items: center;
+}
+
+
+main{
+    display:flex;
+    flex-direction: column;
+    border:1px solid orangered;
+}
+
+
+
+article{
+    display:flex;
+    flex-direction: column;
+    border:1px dotted aqua;
+    align-items: center;
 }
