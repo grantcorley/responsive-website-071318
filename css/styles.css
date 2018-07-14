@@ -48,13 +48,17 @@ header{
 
 
 main{
-    display:flex;
-    flex-direction: column;
+    /* display:flex;
+    flex-direction: column; */
     /* border:2px solid orangered; */
     max-width:994px;
     margin: 0 auto;
 }
 
+#articles{
+    display:flex;
+    flex-direction: column;
+}
 
 article{
     display:flex;
@@ -149,5 +153,9 @@ nav a{
 
 @media (min-width: 1024px) { 
 
+    #articles{
+        flex-direction: row;
+        margin-top:1em;
+    }
 
  }
