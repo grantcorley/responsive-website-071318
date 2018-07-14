@@ -20,13 +20,13 @@ h1{
 
 h2{
     font-size:2.4em;
-    border:1px dotted salmon;
+    /* border:1px dotted salmon; */
     margin: .25em 0 0 0;
     letter-spacing: .05em;
 }
 
 p{
-    border:1px dotted green;
+    /* border:1px dotted green; */
     line-height: 1.5em;
 }
 
@@ -41,7 +41,7 @@ img{
 header{
     display:flex;
     flex-direction: column;
-    border:1px solid rgb(0, 247, 255);
+    /* border:1px solid rgb(0, 247, 255); */
     align-items: center;
 }
 
@@ -49,7 +49,7 @@ header{
 main{
     display:flex;
     flex-direction: column;
-    border:1px solid orangered;
+    border:2px solid orangered;
 }
 
 
@@ -62,11 +62,45 @@ article{
 }
 
 #hero{
-    border:2px solid red;
+    border-radius:.5em;
+    background-image: url("../images/pattern.png");
+    /* border:1px solid red; */
     width:100%;
     height:24vh;
     display:flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    
+}
+
+nav ul{
+    display:flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+
+nav li{
+    background-color: orange;
+    padding:.5em .75em;
+    border-radius: .25em;
+}
+
+/*put some margins around the nav items*/
+nav li + li{   /*select everything AFTER the first li*/
+    margin-left: .5em;
+}
+
+nav li:nth-child(2){
+    background-color:orangered;
+}
+
+nav li:nth-child(2) a{
+    color:white;
+}
+
+nav a{
+    text-decoration: none;
+    color:black;
 }
